@@ -1,0 +1,17 @@
+{
+  "version": "1", 
+  "name": "Transfers",
+  "abis": {
+    "Transfers": {
+      "path": "./erc20.abi.json"
+    }
+  },
+  "instances": [
+    {
+      "abi": "Transfers", 
+      "address": "0x87B4bD3A657c4D739730e115Dad11246c0D8D2b1", 
+      "startBlock": 1575860, 
+      "chain": "ink-sepolia"
+    }
+  ]
+}

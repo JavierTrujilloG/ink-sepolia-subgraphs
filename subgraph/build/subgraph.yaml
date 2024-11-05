@@ -1,0 +1,26 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: inko-eth
+    network: ink-sepolia
+    source:
+      address: "0x87B4bD3A657c4D739730e115Dad11246c0D8D2b1"
+      abi: ERC20
+      startBlock: 1575860
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - TokenBalance
+      abis:
+        - name: ERC20
+          file: inko-eth/abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: inko-eth/inko-eth.wasm
