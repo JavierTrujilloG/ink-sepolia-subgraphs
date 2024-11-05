@@ -5,7 +5,7 @@
 We'll be indexing [Inko ETH token contract](https://explorer-sepolia.inkonchain.com/token/0x87B4bD3A657c4D739730e115Dad11246c0D8D2b1) on Ink Sepolia. The subgraph tracks the Transfer events to create account balances.
 
 The subgraph is already built, all you need to do is to deploy it onto Goldsky with the following command:
-`goldsky subgraph deploy ink-eth-balances/1.0.0`
+`goldsky subgraph deploy inko-eth-balances/1.0.0`
 
 Alternatively, you can easily use this subgraph code to index any other ERC-20 contract by changing in the `subgraph.yaml`:
 - Contract Address
